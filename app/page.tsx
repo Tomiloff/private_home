@@ -10,7 +10,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <h1>Private Home</h1>
+        <h1>Main version</h1>
       </div>
 
       <div className={styles.grid}>
