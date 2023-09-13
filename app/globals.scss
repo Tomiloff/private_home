@@ -1,0 +1,206 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../assets/all_fonts/proxima_nova/ProximaNova-Semibold.woff2') format('woff2'), url('../assets/all_fonts/proxima_nova/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../assets/all_fonts/proxima_nova/ProximaNova-Bold.woff2') format('woff2'), url('../assets/all_fonts/proxima_nova/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../assets/all_fonts/proxima_nova/ProximaNova-Regular.woff2') format('woff2'), url('../assets/all_fonts/proxima_nova/ProximaNova-Regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../assets/all_fonts/proxima_nova/ProximaNova-Light.woff2') format('woff2'), url('../assets/all_fonts/proxima_nova/ProximaNova-Light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Colors */
+:root {
+  --blue: #2F80ED;
+  --white: #F5F5F5;
+  --gray: #888888;
+}
+
+
+/* Global-styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: 'ProximaNova-Regular';
+  text-transform: uppercase;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'ProximaNova-Light';
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+
+
+/* Media queries */
+@media (min-width: 0px) and (max-width: 767px) {
+  /* Брейк от 0 до 767 */
+
+  h1 {
+    font-size: 12.7vw;
+  }
+  
+  h2 {
+    font-size: 3.8vw;
+  }
+  
+  h3 {
+    font-size: 2.9vw;
+  }
+
+  h4 {
+    font-size: 2.8vw;
+  }
+
+  p {
+    font-size: 1.9vw;
+  }
+
+  span {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Брейк от 768 до 1023 */
+
+  h1 {
+    font-size: 11.7vw;
+  }
+  
+  h2 {
+    font-size: 1.8vw;
+  }
+  
+  h3 {
+    font-size: 1.1vw;
+  }
+
+  h4 {
+    font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 0.6vw;
+  }
+
+  span {
+    font-size: 0.5vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* Брейк от 1024 до 1280 */
+
+  h1 {
+    font-size: 7vw;
+  }
+  
+  h2 {
+    font-size: 1.8vw;
+  }
+  
+  h3,
+  h4 {
+    font-size: 1.1vw;
+  }
+
+  p {
+    font-size: 0.6vw;
+  }
+
+  span {
+    font-size: 0.5vw;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1769px) {
+  /* Брейк от 1281 до 1769 */
+
+  h1 {
+    font-size: 7.5vw;
+  }
+  
+  h2 {
+    font-size: 2vw;
+  }
+  
+  h3,
+  h4 {
+    font-size: 1.1vw;
+  }
+
+  p {
+    font-size: 0.6vw;
+  }
+
+  span {
+    font-size: 0.5vw;
+  }
+}
+
+@media (min-width: 1770px) {
+  /* Брейк от 1770 и выше */
+    
+  h1 {
+    font-size: 6.7vw;
+  }
+  
+  h2 {
+    font-size: 1.9vw;
+  }
+  
+  h3 {
+    font-size: 1.3vw;
+  }
+
+  h4 {
+    font-size: 1.2vw;
+  }
+
+  p {
+    font-size: 0.6vw;
+  }
+
+  span {
+    font-size: 0.5vw;
+  }
+}
