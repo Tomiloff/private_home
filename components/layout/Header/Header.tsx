@@ -2,19 +2,13 @@ import { FC } from "react";
 import styles from './header.module.scss'
 import Image from "next/image";
 import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
+import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBurgerMenu";
 
 export const Header: FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header_subpanel}>
-        <button className={styles.subpanel_menu_btn}>
-          <div className={styles.menu_btn_burger}>
-            <span className={styles.btn_burger_line}></span>
-            <span className={styles.btn_burger_line}></span>
-            <span className={styles.btn_burger_line}></span>
-          </div>
-          <span>меню</span>
-        </button>
+        <ButtonBurgerMenu />
         <HeaderSelect />
       </div>
       <Image 
