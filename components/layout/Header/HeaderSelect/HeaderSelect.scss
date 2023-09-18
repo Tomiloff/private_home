@@ -1,0 +1,65 @@
+.header_subpanel_select  {
+
+  &__control {
+    border: none !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+    background-color: var(--blue) !important;
+    padding: 0 20px 0 12px;
+    width: 240px !important;
+    cursor: pointer !important;
+    overflow: hidden;
+    height: 52px;
+    z-index: 2;
+    
+    div {
+      color: var(--white) !important;
+    }
+
+    .header_subpanel_select__value-container {
+      overflow: hidden;
+      height: 27px;
+      
+      .header_subpanel_select__placeholder {
+        position: relative;
+        padding-top: 60px;
+        transition: .2s ease-in;
+      
+        &:after {
+          content: "Выбрать квартиру";
+          position: absolute;
+          top: 6px;
+          left: 0;
+          color: var(--white);
+          transition: .2s ease-in;
+        }  
+      }  
+    }
+
+    &:hover .header_subpanel_select__placeholder:after {
+      top: -22px;
+      transition: .2s ease-in;
+    }
+    &:hover .header_subpanel_select__placeholder {
+      padding-top: 0;
+      transition: .2s ease-in;
+    } 
+
+    .header_subpanel_select__indicator-separator{
+      display: none !important;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #ffffff 0%);
+    z-index: 1;
+    top: 16px !important;
+    border-top: none !important;
+    border: 1px solid var(--blue);
+    border-radius: 0 0 30px 30px !important;
+    padding: 30px 0 22px 0;
+  }
+}
