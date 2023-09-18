@@ -3,6 +3,7 @@ import styles from './header.module.scss'
 import Image from "next/image";
 import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBurgerMenu";
+import { CallbackPanel } from "@/components/common/CallbackPanel/CallbackPanel";
 
 export const Header: FC = () => {
   return (
@@ -18,8 +19,7 @@ export const Header: FC = () => {
         height={30}
       />
       <div className={styles.header_subpanel}>
-        <span>+7 495 527 21 21</span>
-        <a href="#callback"><button>Заказать обратный звонок</button></a>
+        <CallbackPanel />
       </div>
     </header>
   )
