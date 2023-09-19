@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import styles from "./phoneLink.module.scss";
-import { withPageWidth } from "../../../../utils/withPageWidth";
+import { withPageWidth } from "@/utils/withPageWidth";
 import { PhoneLinkIcon } from "./PhoneLinkIcon/PhoneLinkIcon";
 import { HeaderSelect } from "@/components/layout/Header/HeaderSelect/HeaderSelect";
 

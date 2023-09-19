@@ -1,21 +1,19 @@
-'use client'
-
 import { FC, ComponentType, useState, useEffect } from "react";
 
 export const withPageWidth = <P extends object>(Child: ComponentType<P>): FC<P> => {
 
   const PageWidthContainer: FC<P> = (props) => {
     
-    const [pageWidth, setPageWidth] = useState(window.innerWidth)
+    const [pageWidth, setPageWidth] = useState(typeof window && window.innerWidth)
 
     const handleResize = () => {
-      setPageWidth(window.innerWidth)
+      setPageWidth(typeof window && window.innerWidth)
     }
 
     useEffect(() => {
-      window.addEventListener('resize', handleResize);
+      typeof window && window.addEventListener('resize', handleResize);
 
-      return () => window.removeEventListener('resize', handleResize);
+      return () => typeof window && window.removeEventListener('resize', handleResize);
     }, [pageWidth]);
    
     return (
