@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, ComponentType, useState, useEffect } from "react";
 
 export const withPageWidth = <P extends object>(Child: ComponentType<P>): FC<P> => {
