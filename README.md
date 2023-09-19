@@ -12,4 +12,4 @@ pnpm dev
 
 ## Deploy on Vercel
 
-[private-home.vercel.app](https://private-home.vercel.app).
+[private-home.vercel.app](https://private-home.vercel.app)
