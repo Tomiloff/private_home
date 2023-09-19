@@ -4,16 +4,17 @@ export const withPageWidth = <P extends object>(Child: ComponentType<P>): FC<P> 
 
   const PageWidthContainer: FC<P> = (props) => {
     
-    const [pageWidth, setPageWidth] = useState(typeof window && window.innerWidth)
+    const [pageWidth, setPageWidth] = useState(0)
 
     const handleResize = () => {
-      setPageWidth(typeof window && window.innerWidth)
+      setPageWidth(window.innerWidth)
     }
 
     useEffect(() => {
-      typeof window && window.addEventListener('resize', handleResize);
+      setPageWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
 
-      return () => typeof window && window.removeEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
     }, [pageWidth]);
    
     return (

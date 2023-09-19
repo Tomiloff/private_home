@@ -6,7 +6,7 @@ import Image from "next/image";
 import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBurgerMenu";
 import { HeaderCallbackPanel } from "./HeaderCallbackPanel/HeaderCallbackPanel";
-import { withPageWidth } from "../../../utils/withPageWidth";
+import { withPageWidth } from "@/utils/withPageWidth";
 import { PhoneLinkIcon } from "@/components/common/CallbackPanel/PhoneLink/PhoneLinkIcon/PhoneLinkIcon";
 
 type Props = {
