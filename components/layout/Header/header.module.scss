@@ -8,8 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 20px;
-
+  
   .header_subpanel {
     display: flex;
     align-items: center; 
@@ -18,25 +17,39 @@
 
 
 /* Media queries */
-@media (min-width: 0px) and (max-width: 360px) {
-  /* Брейк от 0 до 360 */
+@media (min-width: 0px) and (max-width: 521px) {
+  /* Брейк от 0 до 521 */
   .header {
     padding: 19px 20px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Брейк от 768 до 1024 */
-
+@media (min-width: 521px) and (max-width: 769px) {
+  /* Брейк от 521 до 769 */
   .header {
-    padding: 19px 20px;
+    padding: 35px 40px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  /* Брейк от 1024 до 1440 */
+@media (min-width: 769px) and (max-width: 1025px) {
+  /* Брейк от 769 до 1025 */
 
   .header {
-    padding: 24px 20px;
+    padding: 25px 30px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Брейк от 1025 до 1440 */
+
+  .header {
+    padding: 24px 40px;
+  }
+}
+
+@media (min-width: 1441px) {
+  /* Брейк от 1441 и выше */
+  .header {
+    padding: 40px 80px;
   }
 }
