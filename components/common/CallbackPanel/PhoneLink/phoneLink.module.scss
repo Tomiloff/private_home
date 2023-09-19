@@ -1,0 +1,42 @@
+.subpanel_phone_link {
+  overflow: hidden;
+  height: 12px;
+}
+
+.phone_link {
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-family: 'ProximaNova-Semibold';
+  transition: .2s ease-in;
+
+  &:after {
+    content: "Заказать обратный звонок";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .2s ease-in;
+  }
+
+  &:hover {
+    padding-top: 0;
+    transition: .2s ease-in;
+  }
+  &:hover::after {
+    top: -15px;
+    transition: .2s ease-in;
+  }
+}
+
+
+/* Media queries */
+@media (min-width: 0px) and (max-width: 935px) {
+  /* Брейк от 0 до 935 */
+
+  .subpanel_phone_link {
+    overflow: visible;
+    height: unset;
+  }
+}

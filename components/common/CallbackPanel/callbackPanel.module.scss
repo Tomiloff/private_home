@@ -1,0 +1,13 @@
+.subpanel_phone_number {
+  margin-right: 40px;
+}
+
+
+/* Media queries */
+@media (min-width: 0px) and (max-width: 935px) {
+  /* Брейк от 0 до 935 */
+
+  .subpanel_phone_number {
+    display: none;
+  }
+}

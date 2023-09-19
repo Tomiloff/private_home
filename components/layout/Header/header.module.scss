@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  background: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+
+  .header_subpanel {
+    display: flex;
+    align-items: center; 
+  }
+}
+
+
+/* Media queries */
+@media (min-width: 0px) and (max-width: 360px) {
+  /* Брейк от 0 до 360 */
+  .header {
+    padding: 19px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Брейк от 768 до 1024 */
+
+  .header {
+    padding: 19px 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* Брейк от 1024 до 1440 */
+
+  .header {
+    padding: 24px 20px;
+  }
+}

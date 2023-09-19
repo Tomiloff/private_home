@@ -1,11 +1,11 @@
-import './globals.css'
+import '../assets/basic_styles/reset.scss'
+import '../assets/basic_styles/globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { HeaderContainer } from '@/components/layout/Header/Header'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Main version',
+  title: 'INCHAPIN',
   description: 'Test task',
 }
 
@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <HeaderContainer />
+        {children}
+      </body>
     </html>
   )
 }
