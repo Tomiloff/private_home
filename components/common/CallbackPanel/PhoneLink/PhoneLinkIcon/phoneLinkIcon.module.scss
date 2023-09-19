@@ -1,0 +1,13 @@
+.phone_link_icon {
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-color: var(--blue);
+  }
+}

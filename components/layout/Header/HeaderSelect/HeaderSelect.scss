@@ -54,7 +54,7 @@
     position: absolute;
     box-shadow: none !important;
     background-color: transparent !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #ffffff 0%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, var(--white) 0%);
     z-index: 1;
     top: 16px !important;
     border-top: none !important;

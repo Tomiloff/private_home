@@ -2,9 +2,9 @@
 
 import { FC } from "react";
 import styles from "./phoneLink.module.scss";
-import Image from "next/image";
-import phoneIcon from "../../../../assets/all_images/icons/phone_icon.svg"
 import { withPageWidth } from "@/utils/withPageWidth";
+import { PhoneLinkIcon } from "./PhoneLinkIcon/PhoneLinkIcon";
+import { HeaderSelect } from "@/components/layout/Header/HeaderSelect/HeaderSelect";
 
 type Props = {
   text: string;
@@ -20,24 +20,22 @@ export const PhoneLink: FC<Props> = ({
 
   return (
     <div className={styles.subpanel_phone_link}>
-      {pageWidth && pageWidth > 768 
+      {pageWidth && pageWidth > 935 
         ?
         <a 
           href={link} 
           className={styles.phone_link}>
           {text}
         </a>
+        : 
+        pageWidth && pageWidth < 935 && pageWidth > 545 
+        ?
+        <HeaderSelect />
         :
-        <a href={link}
-          className={styles.phone_link_icon}
-        >
-          <Image 
-          src={phoneIcon}
-          width={14}
-          height={14} 
-          alt={text} 
-        />    
-        </a>
+        <PhoneLinkIcon
+          link={link}
+          text={text}
+        />
       }
     </div>
   )

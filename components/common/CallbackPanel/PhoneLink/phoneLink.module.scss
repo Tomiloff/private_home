@@ -30,24 +30,10 @@
   }
 }
 
-.phone_link_icon {
-  border: 1px solid var(--gray);
-  border-radius: 50%;
-  width: 43px;
-  height: 43px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    border-color: var(--blue);
-  }
-}
-
 
 /* Media queries */
-@media (min-width: 0px) and (max-width: 768px) {
-  /* Брейк от 0 до 767 */
+@media (min-width: 0px) and (max-width: 935px) {
+  /* Брейк от 0 до 935 */
 
   .subpanel_phone_link {
     overflow: visible;

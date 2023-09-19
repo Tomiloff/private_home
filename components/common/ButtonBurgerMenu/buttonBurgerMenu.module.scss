@@ -23,3 +23,21 @@
     transition: .2s ease-in;
   }
 } 
+
+
+/* Media queries */
+@media (min-width: 0px) and (max-width: 670px) {
+  /* Брейк от 0 до 670 */
+
+  .subpanel_menu_btn {
+    margin-right: 10px;
+
+    .btn_burger_line {
+      background-color: #000 !important;
+    }
+
+    .menu_btn_title {
+      display: none;
+    }
+  }
+}

@@ -10,7 +10,7 @@ export const ButtonBurgerMenu: FC= () => {
         <span className={styles.btn_burger_line}></span>
         <span className={styles.btn_burger_line}></span>
       </div>
-      <span>меню</span>
+      <span className={styles.menu_btn_title}>меню</span>
     </button>
   )
 }
