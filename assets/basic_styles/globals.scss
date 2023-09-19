@@ -50,8 +50,12 @@ body {
 }
 
 body {
-  padding: 131px 20px 0 20px;
   margin: 0 auto;
+
+  h1 {
+    line-height: 0.7;
+  }
+
   h1,
   h2,
   h3,
@@ -78,69 +82,77 @@ header {
 
 
 /* Media queries */
-@media (min-width: 0px) and (max-width: 520px) {
-  /* Брейк от 0 до 520 */
-
-  h1 {
-    font-size: 51px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-  
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 13px;
-  }
-
-  p,
-  a {
-    font-size: 11px;
-  }
-
-  span {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 520px) and (max-width: 768px) {
-  /* Брейк от 520 до 768 */
-
-  h1 {
-    font-size: 110px;
-  }
-  
-  h2 {
-    font-size: 28px;
-  }
-  
-  h3 {
-    font-size: 19px;
-  }
-
-  h4 {
-    font-size: 26px;
-  }
-
-  p,
-  span,
-  a {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Брейк от 768 до 1024 */
+@media (min-width: 0px) and (max-width: 521px) {
+  /* Брейк от 0 до 521 */
 
   body {
-    padding-top: 100px;
+    padding: 80px 20px 0 20px;
+    
+    h1 {
+      font-size: 72px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    h3 {
+      font-size: 16px;
+    }
+  
+    h4 {
+      font-size: 13px;
+    }
+  
+    p,
+    a {
+      font-size: 11px;
+    }
+  
+    span {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (min-width: 521px) and (max-width: 769px) {
+  /* Брейк от 521 до 769 */
+
+  body {
+    padding: 120px 40px 0 40px;
 
     h1 {
-      font-size: 89px;
+      font-size: 156px;
+    }
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    h3 {
+      font-size: 27px;
+    }
+
+    h4 {
+      font-size: 26px;
+    }
+
+    p,
+    span,
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  /* Брейк от 769 до 1025 */
+
+  body {
+    padding: 100px 30px 0 30px;
+
+    h1 {
+      font-size: 126px;
     }
     
     h2 {
@@ -163,14 +175,14 @@ header {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  /* Брейк от 1024 до 1440 */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Брейк от 1025 до 1440 */
 
   body {
-    padding-top: 100px;
+    padding: 100px 40px 0 40px;
 
     h1 {
-      font-size: 115px;
+      font-size: 163px;
     }
     
     h2 {
@@ -179,7 +191,8 @@ header {
     
     h3,
     h4 {
-      font-size: 26px;
+      font-size: 30px;
+      line-height: 36px;
     }
   
     p {
@@ -196,34 +209,39 @@ header {
   }
 }
 
-@media (min-width: 1440px) {
-  /* Брейк от 1440 и выше */
+@media (min-width: 1441px) {
+  /* Брейк от 1441 и выше */
     
-  h1 {
-    font-size: 138px;
-  }
-  
-  h2 {
-    font-size: 52px;
-  }
-  
-  h3 {
-    font-size: 34px;
-  }
+  body {
+    padding: 130px 80px 0 80px;
+    
+    h1 {
+      font-size: 194px;
+    }
+    
+    h2 {
+      font-size: 52px;
+    }
+    
+    h3 {
+      font-size: 35px;
+      line-height: 43px;
+    }
 
-  h4 {
-    font-size: 31px;
-  }
+    h4 {
+      font-size: 31px;
+    }
 
-  p {
-    font-size: 20px;
-  }
+    p {
+      font-size: 20px;
+    }
 
-  span {
-    font-size: 17px;
-  }
+    span {
+      font-size: 17px;
+    }
 
-  a {
-    font-size: 15px;
+    a {
+      font-size: 15px;
+    }
   }
 }
