@@ -8,6 +8,7 @@ import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBur
 import { HeaderCallbackPanel } from "./HeaderCallbackPanel/HeaderCallbackPanel";
 import { withPageWidth } from "@/utils/withPageWidth";
 import { PhoneLinkIcon } from "@/components/common/CallbackPanel/PhoneLink/PhoneLinkIcon/PhoneLinkIcon";
+import topLogo from "../../../assets/all_images/logo.webp";
 
 type Props = {
   pageWidth?: number;
@@ -35,7 +36,7 @@ export const Header: FC<Props> = ({
       {pageWidth && pageWidth > 1440 
         ?
         <Image 
-          src="/logo.webp" 
+          src={topLogo}
           alt="logo" 
           width={187}
           height={30}
@@ -43,14 +44,14 @@ export const Header: FC<Props> = ({
         : pageWidth && pageWidth < 1440 && pageWidth > 350 
           ?
           <Image 
-            src="/logo.webp" 
+            src={topLogo}
             alt="logo" 
             width={155}
             height={25}
           />
           : 
           <Image 
-            src="/logo.webp" 
+            src={topLogo} 
             alt="logo" 
             width={130}
             height={21}
