@@ -1,7 +1,7 @@
-import { Header } from '@/components/layout/Header/Header'
 import '../assets/basic_styles/reset.scss'
 import '../assets/basic_styles/globals.scss'
 import type { Metadata } from 'next'
+import { Header } from '@/components/layout/Header/Header'
 
 
 export const metadata: Metadata = {
