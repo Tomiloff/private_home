@@ -1,5 +1,3 @@
-'use client'
-
 import { FC } from "react";
 import styles from "./phoneLinkIcon.module.scss";
 import Image from "next/image";
