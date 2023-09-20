@@ -1,7 +1,8 @@
-import '../assets/basic_styles/reset.scss'
-import '../assets/basic_styles/globals.scss'
+import '@/assets/basic_styles/reset.scss'
+import '@/assets/basic_styles/globals.scss'
 import type { Metadata } from 'next'
 import { HeaderContainer } from '@/components/layout/Header/Header'
+import dynamic from 'next/dynamic'
 
 
 export const metadata: Metadata = {

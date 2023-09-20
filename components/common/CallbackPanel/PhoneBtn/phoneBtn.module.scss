@@ -1,9 +1,9 @@
-.subpanel_phone_link {
+.subpanel_phone_btn {
   overflow: hidden;
   height: 14px;
 }
 
-.phone_link {
+.phone_btn {
   position: relative;
   display: block;
   padding-top: 15px;
@@ -35,7 +35,7 @@
 @media (min-width: 0px) and (max-width: 935px) {
   /* Брейк от 0 до 935 */
 
-  .subpanel_phone_link {
+  .subpanel_phone_btn {
     overflow: visible;
     height: unset;
   }

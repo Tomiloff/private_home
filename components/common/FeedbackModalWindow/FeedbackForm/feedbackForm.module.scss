@@ -1,0 +1,50 @@
+.window_form_wrapper {
+  max-width: 586px;
+  width: 100%;
+
+  .window_form {
+    display: flex;
+    flex-direction: column;
+  
+    .window_form_input {
+      border-bottom: 1px solid var(--gray);
+      width: 100%;
+      margin-bottom: 81px;
+      font-family: "ProximaNova-Regular";
+      font-size: 23px;
+      padding: 10px 0;
+    }
+
+    .window_form_span {
+      margin-bottom: 30px;
+      text-align: center;
+      color: var(--gray);
+      line-height: 19px;
+      text-transform: none;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .window_form_btn {
+      color: var(--white);
+      text-transform: uppercase;
+      background-color: var(--blue);
+      font-family: "ProximaNova-Bold";
+      font-size: 15px;
+      padding: 24px 69px;
+      border-radius: 30px;
+      max-width: 234px;
+      margin: 0 auto;
+
+      &:hover {
+        transition: .2s ease-in;
+        background-color: #2f80edcc;
+      }
+      &:active {
+        background-color: #205eaecc;
+      }
+    }
+  }
+}

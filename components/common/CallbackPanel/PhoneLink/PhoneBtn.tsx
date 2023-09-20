@@ -1,39 +1,35 @@
 'use client'
 
 import { FC } from "react";
-import styles from "./phoneLink.module.scss";
+import styles from "./phoneBtn.module.scss";
 import { withPageWidth } from "@/utils/withPageWidth";
-import { PhoneLinkIcon } from "./PhoneLinkIcon/PhoneLinkIcon";
+import { PhoneBtnIcon } from "./PhoneBtnIcon/PhoneBtnIcon";
 import { HeaderSelect } from "@/components/layout/Header/HeaderSelect/HeaderSelect";
 
 type Props = {
   text: string;
-  link: string;
   pageWidth?: number;
 }
 
-export const PhoneLink: FC<Props> = ({
+export const PhoneBtn: FC<Props> = ({
   text,
-  link,
   pageWidth
 }) => {
 
   return (
-    <div className={styles.subpanel_phone_link}>
+    <div className={styles.subpanel_phone_btn}>
       {pageWidth && pageWidth > 935 
         ?
-        <a 
-          href={link} 
-          className={styles.phone_link}>
+        <button 
+          className={styles.phone_btn}>
           {text}
-        </a>
+        </button>
         : 
         pageWidth && pageWidth < 935 && pageWidth > 545 
         ?
         <HeaderSelect />
         :
-        <PhoneLinkIcon
-          link={link}
+        <PhoneBtnIcon
           text={text}
         />
       }
@@ -41,4 +37,4 @@ export const PhoneLink: FC<Props> = ({
   )
 }
 
-export const PhoneLinkContainer = withPageWidth(PhoneLink);
+export const PhoneBtnContainer = withPageWidth(PhoneBtn);

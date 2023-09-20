@@ -1,24 +1,21 @@
 import { FC } from "react";
 import styles from "./callbackPanel.module.scss";
-import { PhoneLinkContainer } from "./PhoneLink/PhoneLink";
+import { PhoneBtnContainer } from "./PhoneBtn/PhoneBtn";
 
 type Props = {
   text: string;
-  link: string;
   phoneNumber: string;
 }
 
 export const CallbackPanel: FC<Props> = ({
   text,
-  link,
   phoneNumber
 }) => {
   return (
     <>
       <span className={styles.subpanel_phone_number}>{phoneNumber}</span>
-      <PhoneLinkContainer
+      <PhoneBtnContainer
         text={text}
-        link={link}
       />
     </>
   )

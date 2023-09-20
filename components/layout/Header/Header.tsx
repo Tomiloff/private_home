@@ -7,15 +7,20 @@ import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBurgerMenu";
 import { HeaderCallbackPanel } from "./HeaderCallbackPanel/HeaderCallbackPanel";
 import { withPageWidth } from "@/utils/withPageWidth";
-import { PhoneLinkIcon } from "@/components/common/CallbackPanel/PhoneLink/PhoneLinkIcon/PhoneLinkIcon";
-import topLogo from "../../../assets/all_images/logo.webp";
+import { PhoneBtnIcon } from "@/components/common/CallbackPanel/PhoneBtn/PhoneBtnIcon/PhoneBtnIcon";
+import topLogo from "@/assets/all_images/logo.webp";
+import { withStateModalWindow } from "@/utils/withStateModalWindow";
 
 type Props = {
   pageWidth?: number;
+  show?: boolean;
+  setShow?: any;
 }
 
 export const Header: FC<Props> = ({
-  pageWidth
+  pageWidth,
+  show,
+  setShow
 }) => {
   return (
     <header className={styles.header}>
@@ -26,8 +31,9 @@ export const Header: FC<Props> = ({
           ? 
           <HeaderSelect />
           : pageWidth && pageWidth < 935 && pageWidth > 590 &&
-          <PhoneLinkIcon
-            link="#callback"
+          <PhoneBtnIcon
+            show={show}
+            setShow={setShow}
             text="Заказть обратный звонок"
           />
         }
@@ -65,4 +71,4 @@ export const Header: FC<Props> = ({
   )
 };
 
-export const HeaderContainer = withPageWidth(Header);
+export const HeaderContainer = withStateModalWindow(withPageWidth(Header));
