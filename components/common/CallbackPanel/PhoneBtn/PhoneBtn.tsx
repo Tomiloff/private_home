@@ -7,17 +7,21 @@ import { PhoneBtnIcon } from "./PhoneBtnIcon/PhoneBtnIcon";
 import { HeaderSelect } from "@/components/layout/Header/HeaderSelect/HeaderSelect";
 import { CSSTransition } from "react-transition-group";
 import { FeedbackModalWindow } from "../../FeedbackModalWindow/FeedbackModalWindow";
+import { withStateModalWindow } from "@/utils/withStateModalWindow";
 
 type Props = {
   text: string;
   pageWidth?: number;
+  show?: boolean;
+  setShow?: any;
 }
 
 export const PhoneBtn: FC<Props> = ({
   text,
-  pageWidth
+  pageWidth,
+  show,
+  setShow
 }) => {
-  const [show, setShow] = useState(false);
 
   return (
     <div className={styles.subpanel_phone_btn}>
@@ -25,7 +29,7 @@ export const PhoneBtn: FC<Props> = ({
         ?
         <button 
           className={styles.phone_btn}
-          onClick={() => setShow(!show)}
+          onClick={() => setShow(true)}
         >
           {text}
         </button>
@@ -36,6 +40,8 @@ export const PhoneBtn: FC<Props> = ({
         :
         <PhoneBtnIcon
           text={text}
+          show={show}
+          setShow={setShow}
         />
       }
       <CSSTransition
@@ -52,4 +58,4 @@ export const PhoneBtn: FC<Props> = ({
   )
 }
 
-export const PhoneBtnContainer = withPageWidth(PhoneBtn);
+export const PhoneBtnContainer = withStateModalWindow(withPageWidth(PhoneBtn));
