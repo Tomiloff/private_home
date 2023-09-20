@@ -1,19 +1,23 @@
-.top_banner_preview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.top_banner {
+  margin-bottom: 250px;
 
-  .top_banner_subtitle,
-  .top_banner_title {
-    display: flex;
-    align-items: end;
-  }
-
-  .top_banner_title {
-    justify-content: end;
-  }
-
-  .banner_subtitle_h3 {
-    color: var(--blue);
+  .top_banner_preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    .top_banner_subtitle,
+    .top_banner_title {
+      display: flex;
+      align-items: end;
+    }
+  
+    .top_banner_title {
+      justify-content: end;
+    }
+  
+    .banner_subtitle_h3 {
+      color: var(--blue);
+    }
   }
 }
 
@@ -21,16 +25,18 @@
 /* Media queries */
 @media (min-width: 0px) and (max-width: 769px) {
   /* Брейк от 0 до 768 */
-
+  .top_banner {
+    margin-bottom: 100px;
+  }
   .top_banner_preview {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 
     .banner_subtitle_h3 {
       margin-bottom: 30px;
     }
 
     .top_banner_title {
-      justify-content: flex-start;
+      justify-content: center !important;
     }
   }
 }
@@ -39,6 +45,7 @@
   /* Брейк от 768 до 1024 */
   .top_banner {
     height: 69vh;
+    margin-bottom: 200px;
   }
 }
 

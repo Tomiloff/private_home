@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from './topBanner.module.scss'
 import Image from "next/image";
-import topBannerImg from "../../../assets/all_images/top_banner_img.webp";
+import topBannerImg from "@/assets/all_images/top_banner_img.webp";
 
 export const TopBanner: FC= () => {
   
