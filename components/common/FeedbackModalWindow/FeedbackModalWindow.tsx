@@ -4,6 +4,7 @@ import { FC, useEffect } from "react";
 import styles from './feedbackModalWindow.module.scss'
 import Image from 'next/image'
 import crossExitIcon from "@/assets/all_images/icons/cross_exit.svg";
+import { FeedbackForm } from "./FeedbackForm/FeedbackForm";
 
 type Props = {
   setShow: (e: boolean) => void  
@@ -27,8 +28,8 @@ export const FeedbackModalWindow: FC<Props> = ({
   
   return (
     <div className={styles.modal_window_wrapper}>
-      <h1>Modal window</h1>
-      <button 
+      <button
+        className={styles.window_close_btn}
         onClick={() => setShow(false)}
       >
         <Image 
@@ -38,6 +39,8 @@ export const FeedbackModalWindow: FC<Props> = ({
           alt="Скрыть окно"
         />
       </button>
+      <h2 className={styles.modal_window_title}>Заказать звонок</h2>
+      <FeedbackForm />
     </div>
   )
 }
