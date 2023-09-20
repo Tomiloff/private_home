@@ -7,8 +7,8 @@ import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 import { ButtonBurgerMenu } from "@/components/common/ButtonBurgerMenu/ButtonBurgerMenu";
 import { HeaderCallbackPanel } from "./HeaderCallbackPanel/HeaderCallbackPanel";
 import { withPageWidth } from "@/utils/withPageWidth";
-import { PhoneLinkIcon } from "@/components/common/CallbackPanel/PhoneLink/PhoneLinkIcon/PhoneLinkIcon";
-import topLogo from "../../../assets/all_images/logo.webp";
+import { PhoneBtnIcon } from "@/components/common/CallbackPanel/PhoneBtn/PhoneBtnIcon/PhoneBtnIcon";
+import topLogo from "@/assets/all_images/logo.webp";
 
 type Props = {
   pageWidth?: number;
@@ -26,8 +26,7 @@ export const Header: FC<Props> = ({
           ? 
           <HeaderSelect />
           : pageWidth && pageWidth < 935 && pageWidth > 590 &&
-          <PhoneLinkIcon
-            link="#callback"
+          <PhoneBtnIcon
             text="Заказть обратный звонок"
           />
         }

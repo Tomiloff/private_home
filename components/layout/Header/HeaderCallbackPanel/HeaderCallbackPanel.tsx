@@ -5,7 +5,6 @@ export const HeaderCallbackPanel: FC = () => {
   return (
     <CallbackPanel
       text="Заказать обратный звонок"
-      link="#callback"
       phoneNumber="+7 495 527 21 21"
     />
   )
