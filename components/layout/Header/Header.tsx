@@ -34,7 +34,7 @@ export const Header: FC<Props> = ({
           <PhoneBtnIcon
             show={show}
             setShow={setShow}
-            text="Заказть обратный звонок"
+            text="Заказть звонок"
           />
         }
 
